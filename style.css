@@ -1,0 +1,107 @@
+
+body,html
+{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background:#222 
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+#survey-form {
+    width: 50%;
+    height: 80%;
+    position: absolute;
+    left:25%;
+    top:10%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1%;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  h1.title {
+    text-align: center;
+    margin: 0;
+  }
+  
+  p#description {
+    text-align: center;
+    margin: 2px;
+
+  }
+  
+  label.form-label {
+    margin: 1%;
+
+  }
+  input.form-input,
+  textarea.form-input {
+    width: 100%;
+    padding: 1.5%;
+    border: 1px solid #222;
+    border-radius: 5px;
+    margin: 1%;
+    resize: none;
+
+  }
+  
+  input.form-input:focus {
+    border: none;
+    outline: none;
+    outline-offset: none;
+    border: 1px solid #222;
+
+  }
+
+  .radio-group,
+  .checkbox-group {
+    display: flex;
+    margin-bottom: 1%;
+    font-weight: normal;
+
+  }
+  
+  .radio-group label,
+  .checkbox-group label {
+    margin:1% 2%;
+  }
+  
+  input[type="radio"],
+  input[type="checkbox"] {
+    margin-right: 5px;
+    padding: 1%;
+    color:#333;
+    accent-color: #333;
+
+  }
+  #dropdown
+  {
+    margin-top:0.5%;
+    margin-bottom: 1%;
+    width: 25%;
+  }
+input.form-submit {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+input.form-submit:hover {
+  background-color: #222;
+}
+  

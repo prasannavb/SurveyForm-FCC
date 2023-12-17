@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+
+  <form id="survey-form" action="#" method="post">
+
+    <h1 id="title" class="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform.</p>
+
+    <label for="name" id="name-label" class="form-label">Name</label>
+    <input type="text" id="name" class="form-input" placeholder="Enter your name" autocomplete="off" required>
+
+    <label for="email" id="email-label" class="form-label">Email</label>
+    <input type="email" id="email" class="form-input" placeholder="Enter your email" autocomplete="off" required>
+
+    <label for="number" id="number-label" class="form-label">Contact Number</label>
+    <input type="number" id="number" class="form-input" placeholder="Enter a number" min="1" max="100" autocomplete="off" required>
+
+    <label class="form-label">Your role</label>
+    <div class="radio-group">
+      <label><input type="radio" name="radio-group" value="radio1">Web Developer</label>
+      <label><input type="radio" name="radio-group" value="radio2">App Developer</label>
+      <label><input type="radio" name="radio-group" value="radio2">Data Analyst</label>
+    </div>
+
+    <label class="form-label">Interest</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" value="checkbox1">Frontend Projects</label>
+      <label><input type="checkbox" value="checkbox2">Backend Projects</label>
+      <label><input type="checkbox" value="checkbox2">Fullstack Projects</label>
+      <label><input type="checkbox" value="checkbox2">Data visualization</label>
+    </div>
+
+
+
+    <label for="dropdown" id="dropdown-label" class="form-label">What is your favorite feature about us?</label>
+    <select id="dropdown" class="form-input">
+      <option value="option1"></option>
+      <option value="option1">Projects</option>
+      <option value="option2">Challenges</option>
+      <option value="option2">Community</option>
+    </select>
+    <br>
+
+    <label for="textarea" class="form-label">Any comments or suggestions?</label>
+    <textarea id="textarea" class="form-input" placeholder="Enter your comments" autocomplete="off"></textarea>
+
+    <input type="submit" id="submit" class="form-submit" value="Submit">
+
+  </form>
+
+</body>
+</html>
